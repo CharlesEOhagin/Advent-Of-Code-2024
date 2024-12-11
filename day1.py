@@ -12,17 +12,20 @@ for string in filecontent:
             list2.append(int(split[i]))
 list1.sort()
 list2.sort()
-sum = 0
-for i in range(len(list1)):
-    sum += abs(list1[i] - list2[i])
-print(sum)
-sum2 = 0
-explored = []
-for i in range(len(list1)):
-    list1[i]
-    for j in range(len(list2)):
-        count = 0
-        if list2[j] == list1[i]:
-            count += 1
-        sum2 += count * list1[i]
-print(sum2)
+def sum(list1, list2):
+    total = 0
+    for i in range(len(list1)):
+        total += abs(list1[i] - list2[i])
+    return total
+print(sum(list1,list2))
+def sum2(list1, list2):
+    total = 0
+    for i in range(len(list1)):
+        list1[i]
+        for j in range(len(list2)):
+            count = 0
+            if list2[j] == list1[i]:
+                count += 1
+            total += count * list1[i]
+    return total
+print(sum2(list1,list2))
