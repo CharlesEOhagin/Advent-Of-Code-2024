@@ -34,7 +34,7 @@ def dampner(report):
         if abs(differnce) > 3 or differnce == 0:
             count+=1
             count_updated = True
-        
+    print("count")
             
     return True
 
